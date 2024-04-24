@@ -1,16 +1,88 @@
-echo "# github.io" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/big4b/github.io.git
-git push -u origin main
+<!DOCTYPE html>
 <html lang="es"> 
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Página de prueba del curso prorgamción de páginas web con PYTHON">
+    <meta name="keywords" content="palabras clave, separadas por comas">
     <title>Esta es una página de prueba para ver el funcionamiento de PYTHON</title>
+    <link rel="stylesheet" href="estilo.css"/>
 </head>
 <body>
-    
+    <h1>Este texto es una prueba</h1>
+    <p>Esto es un párrafo de bienvenida a la página de prueba.</p>
+    <p><a href="form.html">FORMULARIO</a></p>
+    <div id="enlace"><p><a href="paga1.html"> Este párrafo es un enlace</a></p></div>
+
+    <div id="maincontent" class="maincontent_1">
+    <ul style="list-style-type:square">
+        <li>Primer elemento</li>
+        <li>Primer elemento</li>
+    </ul>
+    <ol>
+        <li>Primer elemento</li>
+        <li>Primer elemento</li>
+    </ol>
+    <dl>
+
+        <dt><a href="boot.html"> bootstrap</a></dt>
+        <dd>Bebida caliente</dd>
+        <dt>Refresco</dt>
+        <dd>Bebida fría</dd>
+    </dl>
+
+
+    </div>
+    <div id="sidebar"">
+        <table border="2px">
+            <caption>Tabla de 3x3</caption>
+            <tr>
+                <th scope="row">1</th>
+                <td>1x1</td>
+                <td>1x2</td>
+                <td>1x3</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+
+                <td>2x1</td>
+                <td>2x2</td>
+                <td>2x3</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>3x1</td>
+                <td>3x2</td>
+                <td>3x3</td>
+            </tr>
+        </table>  
+    </div>
+    <div id="form1">
+        <form name="form1" autocomplete="off" enctype ="application/x-www-form-urlencoded" action="pagina.php" accept-charset="utf-8" method="post"></form>
+            Nombre <input type="text" name="nombre" size="20">
+            Email: <input type="email" name="mail" id="mail">
+            <input type="submit" value="Aceptar"> <br> <br>
+            Edad: <input type="number" name="edad" id="edad" min="18" max="80"> <br> <br>
+            <input type="submit" value="Enviar"> <br><br>
+            Buscar <input type="search" name="buscar" id="buscar"> <br><br>
+            Rango <input type="range" min="0" max="100"> <br><br>
+            Fecha <input type="date" id="fecha"> <br><br>
+            Hora <input type="time" name="hora" id="hora"> <br><br>
+            Código postal <input pattern="(0-9){5}" placeholder="Introduce 5 dígitos correspondientes a tu CP"> <br><br>
+            <input type="submit" value="Enviar">
+    </div>
+    <div>
+        <form action="registrardatos.php" method="post">
+        <fieldset>
+            <legend>Formulario de comentarios</legend>
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" name="nombre" size="30" id="nombre"><br>
+            <label for="mail">Ingrese su email</label>
+            <input type="text" name="mail" size="100" id="mail"><br>
+            <label for="comentarios">Comentarios</label><br>
+            <textarea name="comentario" rows="5" cols="60" id="comentario"></textarea><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+        </form>
+    </div>
 </body>
 </html>

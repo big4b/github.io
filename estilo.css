@@ -1,0 +1,60 @@
+/*Los comentarios se escriben entre estos signos para que CSS / HTML no lo interprete*/
+/*
+@font-face {
+    font-family: 'mifuente';
+    src: url('Bauhaus.ttf');
+}
+
+*{
+    color: blue;
+}
+
+p{
+    color:coral;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.maincontent {
+    background-color: bisque;
+}
+
+a:visited {
+    color:blueviolet;
+
+}
+
+h1 {
+    font-size: 60px;
+}*/
+
+.container {
+    display: flex;
+    place-content: flex-start flex-end;
+    flex-direction: column;
+    background: steelblue;
+    flex-wrap: wrap;
+    width: 200px;
+    align-content: flex-end;
+}
+
+.item1 {
+    background: green;
+    width: 50%;
+    height: 50px;
+}
+
+.item2 {
+    background: red;
+    width: 50%;
+    height: 50px;
+}
+
+.item3 {
+    background: grey;
+    width: 50%;
+    height: 50px;
+}
+
+
+
